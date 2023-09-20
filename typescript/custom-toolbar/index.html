@@ -1,0 +1,49 @@
+<html><head><link href="https://cdn.syncfusion.com/ej2/22.1.34/material.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+            body{
+                touch-action:none;
+            }
+            .control-section{
+                margin-top:100px;
+            }
+        </style></head><body><div class="stackblitz-container material3">
+<div class="control-section">
+    <div class="content-wrapper">
+        <div class="flex-container">
+            <label class="switchLabel" for="checked">Standalone PDF Viewer</label>
+            <div class="e-message render-mode-info">
+                <span class="e-msg-icon render-mode-info-icon" title="Turn OFF to render the PDF Viewer as server-backed"></span>
+            </div>
+			<div>
+                <input cssclass="buttonSwitch" id="checked" change="change" type="checkbox">
+            </div>
+        </div>
+        <div id="topToolbar" style="top:0px"></div>
+        <div id="magnificationToolbar"></div>
+        <div id="pdfViewer" style="height:640px; width:100%;"></div>
+        <input type="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
+        <div id="popup"></div>
+        <div id="textSearchBox">
+            <div id="searchContainer">
+                <span class="e-input-group e-custom-search-input">
+                    <input type="text" id="searchInput" placeholder="Find in document" class="e-input">
+                    <span class="e-input-group-icon e-pv-search-icon" id="searchBtn"></span>
+                </span>
+                <button id="previousSearch" class="search-button" style="margin-left:5px"></button>
+                <button id="nextSearch" class="search-button"></button>
+            </div>
+            <div id="matchCaseContainer" style="margin-top:8px">
+                <input id="matchCase" type="checkbox">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div></body></html>

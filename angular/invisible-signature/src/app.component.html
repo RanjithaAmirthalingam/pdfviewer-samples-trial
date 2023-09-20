@@ -1,0 +1,22 @@
+<div class='control-section'>
+    <div class='content-wrapper e-tbar-section'>
+        <div class='e-sample-resize-container'>
+            <ejs-toolbar id='topToolbar' #customToolbar>
+                <e-items>
+                    <e-item prefixIcon='e-icons e-folder-open' id='openDocument' tooltipText='Open' (click)='openDocument($event)'></e-item>
+                    <e-item text="Complete Signing" tooltipText="Finish Signing" width="150px" (click)="signDocument($event)" [disabled]="buttonVisibility" align="Right" id="pdfviewer_sign" cssClass="e-pv-button-container"></e-item>
+                    <e-item prefixIcon='e-icons e-download' tooltipText='Download' (click)='downloadClicked($event)' [disabled]="downloadVisibility" cssClass= "e-pv-download-document-container" align='Right'></e-item>
+                </e-items>
+            </ejs-toolbar>
+            </div> 
+
+                <ejs-message id="msg_success" [content]="msgSuccess" [visible]='successVisible' severity="Success"></ejs-message>
+                <ejs-message id="msg_warning" [content]="msgWarning" [visible]='warningVisible' severity="Warning"></ejs-message>
+                <ejs-message id="msg_error" [content]="msgError" [visible]='errorVisible' severity="Error"></ejs-message>
+
+        <ejs-pdfviewer #pdfviewer id='pdfViewer' [documentPath]="document"(addSignature) = "addSignature($event)"  (documentLoad)="documentLoad($event)" [serviceUrl]="service" [enableToolbar]=false [enableNavigationToolbar]=false 
+              style="height:640px; display: block">
+        </ejs-pdfviewer>
+        <input type="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
+    </div>
+</div>

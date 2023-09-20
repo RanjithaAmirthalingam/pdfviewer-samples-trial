@@ -1,0 +1,69 @@
+<html><head><link href="https://cdn.syncfusion.com/ej2/22.1.34/material.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+            body{
+                touch-action:none;
+            }
+            .control-section{
+                margin-top:100px;
+            }
+        </style></head><body><div class="stackblitz-container material3">
+<div class="control-section">
+    <div class="content-wrapper">
+        <div class="flex-container">
+            <label class="switchLabel" for="checked">Standalone PDF Viewer</label>
+            <div class="e-message render-mode-info">
+                <span class="e-msg-icon render-mode-info-icon" title="Turn OFF to render the PDF Viewer as server-backed"></span>
+            </div>
+			<div>
+                <input cssclass="buttonSwitch" id="checked" change="change" type="checkbox">
+            </div>
+        </div>
+        <div id="pdfViewer" style="height:640px; width:100%;">
+    </div>
+</div>
+
+
+
+
+<style>
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.render-mode-info {
+    background: none;
+    border: none;
+    padding-left: 0px;
+}
+
+.render-mode-info .render-mode-info-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.switchLabel {
+    font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;        
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.render-mode-info .render-mode-info-icon::before {
+    line-height: 0.5rem;
+}
+
+.buttonSwitch {
+    Width: 40px;
+    Height: 24px;
+}
+
+</style>
+
+</div></div></body></html>

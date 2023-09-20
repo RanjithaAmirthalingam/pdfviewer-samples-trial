@@ -1,0 +1,25 @@
+{
+  "name": "omayqk--run",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "vue": "3.3.4",
+    "@syncfusion/ej2-base": "23.1.36",
+    "@syncfusion/ej2-vue-base": "23.1.36",
+    "@syncfusion/ej2-pdfviewer": "23.1.36",
+    "@syncfusion/ej2-vue-pdfviewer": "23.1.36",
+    "@syncfusion/ej2-navigations": "23.1.36",
+    "@syncfusion/ej2-vue-navigations": "23.1.36",
+    "@syncfusion/ej2-buttons": "23.1.36",
+    "@syncfusion/ej2-vue-buttons": "23.1.36",
+    "@syncfusion/ej2-vue-charts": "23.1.36",
+    "@syncfusion/ej2-vue-maps": "23.1.36",
+    "@syncfusion/ej2-vue-calendars": "23.1.36",
+    "@syncfusion/ej2-data": "23.1.36",
+    "@syncfusion/ej2-vue-grids": "23.1.36",
+    "@syncfusion/ej2-vue-schedule": "23.1.36",
+    "@syncfusion/ej2-vue-richtexteditor": "23.1.36",
+    "@syncfusion/ej2-vue-inputs": "23.1.36",
+    "@syncfusion/ej2-vue-dropdowns": "23.1.36"
+  }
+}
